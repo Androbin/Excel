@@ -8,19 +8,19 @@ public final class ExcelUtil {
   
   public static Object getCellValue( final Cell cell ) {
     switch ( cell.getCellType() ) {
-      case Cell.CELL_TYPE_BOOLEAN :
+      case Cell.CELL_TYPE_BOOLEAN:
         return cell.getBooleanCellValue();
       
-      case Cell.CELL_TYPE_ERROR :
+      case Cell.CELL_TYPE_ERROR:
         return cell.getErrorCellValue();
       
-      case Cell.CELL_TYPE_FORMULA :
+      case Cell.CELL_TYPE_FORMULA:
         return cell.getCellFormula();
       
-      case Cell.CELL_TYPE_NUMERIC :
+      case Cell.CELL_TYPE_NUMERIC:
         return cell.getNumericCellValue();
       
-      case Cell.CELL_TYPE_STRING :
+      case Cell.CELL_TYPE_STRING:
         return cell.getStringCellValue();
     }
     
